@@ -1,0 +1,174 @@
+.task-item {
+  background: white;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: all 0.2s ease;
+}
+
+.task-item:hover {
+  border-color: #667eea;
+  box-shadow: 0 4px 16px rgba(102, 126, 234, 0.1);
+}
+
+.task-item.completed {
+  background: #f8f9fa;
+  opacity: 0.7;
+}
+
+.task-item.completed .task-title {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.task-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.task-checkbox {
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+  cursor: pointer;
+  accent-color: #667eea;
+  flex-shrink: 0;
+}
+
+.task-title-section {
+  flex: 1;
+}
+
+.task-title {
+  font-size: 1.1rem;
+  color: #333;
+  margin: 0;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.task-description {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.priority-badge {
+  display: inline-block;
+  padding: 6px 10px;
+  background: #f0f0f0;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.task-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 0 32px;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.tags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background: #e8f4f8;
+  color: #0077aa;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.due-date {
+  margin-left: auto;
+  white-space: nowrap;
+}
+
+.task-actions {
+  display: flex;
+  gap: 8px;
+  padding: 0 32px;
+  justify-content: flex-end;
+}
+
+.task-actions button {
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-edit {
+  background: #007bff;
+  color: white;
+}
+
+.btn-edit:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0, 123, 255, 0.3);
+}
+
+.btn-delete {
+  background: #dc3545;
+  color: white;
+}
+
+.btn-delete:hover {
+  background: #c82333;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(220, 53, 69, 0.3);
+}
+
+@media (max-width: 600px) {
+  .task-item {
+    padding: 12px;
+  }
+
+  .task-header {
+    flex-wrap: wrap;
+  }
+
+  .priority-badge {
+    order: 3;
+    width: 100%;
+  }
+
+  .task-meta {
+    padding: 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .due-date {
+    margin-left: 0;
+  }
+
+  .task-actions {
+    padding: 0;
+    justify-content: flex-start;
+    gap: 6px;
+  }
+
+  .task-actions button {
+    padding: 6px 10px;
+    font-size: 0.85rem;
+  }
+}

@@ -1,0 +1,39 @@
+[
+  {
+    "id": "22222222-2222-4222-8222-222222222222",
+    "title": "Prepare presentation",
+    "description": "Finish slides for Monday meeting",
+    "completed": false,
+    "createdAt": "2026-06-20T14:30:00.000Z",
+    "dueDate": "2026-06-28T09:00:00.000Z",
+    "tags": [
+      "work"
+    ],
+    "priority": "high"
+  },
+  {
+    "id": "22222222-2222-4222-8222-222222222223",
+    "title": "Buy Groceries",
+    "description": "Milk, eggs",
+    "completed": false,
+    "createdAt": "2026-06-20T14:30:00.000Z",
+    "dueDate": "2026-06-28T00:00:00.000Z",
+    "tags": [
+      "work"
+    ],
+    "priority": "high"
+  },
+  {
+    "id": "b9202a65-8636-4070-8c4d-34f37e85f0ed",
+    "title": "Deply Task Manager  App",
+    "description": "The app provides a clean interface for creating tasks, setting deadlines, assigning priorities, and collaborating with others. ",
+    "completed": false,
+    "createdAt": "2026-06-21T18:00:38.922Z",
+    "dueDate": "2026-06-21T00:00:00.000Z",
+    "tags": [
+      "Learning",
+      "Task"
+    ],
+    "priority": "high"
+  }
+]
