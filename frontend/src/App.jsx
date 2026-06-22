@@ -9,7 +9,9 @@ export default function App() {
   const [error, setError] = useState(null)
   const [editingTask, setEditingTask] = useState(null)
 
-  const API_URL = 'http://localhost:4000/api/tasks'
+  // const API_URL = 'http://localhost:4000/api/tasks'
+
+  const API_URL = import.meta.env.VITE_API_URL + '/api/tasks'
 
   // Sort tasks by newest first
   const sortTasksByNewest = (tasksArray) => {
